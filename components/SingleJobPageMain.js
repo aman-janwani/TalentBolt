@@ -340,7 +340,7 @@ const SingleJobPageMain = ({ userData }) => {
             <p className="text-[23px] font-semibold text-[#111111]">
               Users Applied
             </p>
-            <div className="grid grid-cols-3 gap-[20px] w-full">
+            <div className="grid  grid-cols-3 gap-[20px] w-full">
               {usersApplied.map((user) => (
                 <UsersAppliedCard key={user.$id} user={user} userData={userData} jobData={jobData}  />
               ))}
