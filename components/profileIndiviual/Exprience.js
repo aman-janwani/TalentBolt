@@ -39,8 +39,6 @@ const Exprience = ({ userData }) => {
     JSON.parse(userData.exprience).exprience
   );
 
-  console.log(experience);
-
   // console.log(JSON.stringify({ exprience: experience }));
 
   const router = useRouter();
@@ -94,7 +92,7 @@ const Exprience = ({ userData }) => {
       <div className="flex flex-col gap-[15px] items-start w-full">
         <p className="text-[24px] font-semibold text-[#111111]">Experience</p>
         <div className="flex flex-wrap gap-[20px]">
-          {userData.exprience &&
+          {userData?.exprience &&
             JSON.parse(userData.exprience).exprience.map((item, index) => (
               <div key={index} className="flex items-center gap-[10px]">
                 <div>

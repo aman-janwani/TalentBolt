@@ -70,6 +70,10 @@ const RigisterIndividual = () => {
         bio: bio,
         type: "individual",
         createdUserAt: currentUser.$createdAt,
+        exprience: JSON.stringify({ exprience: [] }),
+        education: JSON.stringify({ education: [] }),
+        projects: JSON.stringify({ projects: [] }),
+        skills: JSON.stringify({ skills: [] }),
       }
     ).then(() => {
       router.push("/profile");

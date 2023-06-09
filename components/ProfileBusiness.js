@@ -7,8 +7,8 @@ const ProfileBusiness = ({userData}) => {
   return (
     <div className='w-full flex flex-col items-center gap-[10px] px-[60px] py-[40px]'>
       <Intro userData={userData} />
-      <About userData={userData} />
-      <Jobs userData={userData} />
+      {userData.about && <About userData={userData} />}
+      {userData.jobs && <Jobs userData={userData} />}
     </div>
   )
 }
