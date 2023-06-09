@@ -105,8 +105,8 @@ const MainChats = ({ userData }) => {
     <div className="bg-[#111111]/5 flex justify-center h-screen px-[60px] py-[40px]">
       <div className="w-full h-[90%] flex items-start overflow-y-hidden bg-white rounded-[20px]">
         <SideBar chats={chats} userData={userData} />
-        <div className="flex flex-col w-full h-full">
-          <div className="h-max overflow-y-scroll flex px-5 flex-col gap-[20px] py-[20px]">
+        <div className="flex flex-col justify-end w-full h-full">
+          <div className="flex-1 h-max overflow-y-scroll flex px-5 flex-col gap-[20px] py-[20px]">
             {messages.map((message) => {
               if (message.sender === userData.$id) {
                 return (
