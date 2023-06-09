@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Login from "../login/page";
 import UploadJob from "@/components/UploadJob";
 import FindJobsMain from "@/components/FindJobsComponents/FindJobsMain";
+import Head from "next/head";
 
 
 const client = new Client();
@@ -74,6 +75,9 @@ const Page = () => {
   return (
     
     <main className="font-workSans">
+      <Head>
+        <title>Find Jobs | TalentBolt</title>
+      </Head>
       {currentUser ? (
         <>
           {userData.type === "individual" ? (

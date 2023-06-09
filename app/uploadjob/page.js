@@ -5,6 +5,7 @@ import { Client, Account, Databases, ID, Permission, Role, Query } from "appwrit
 import { useEffect, useState } from "react";
 import Login from "../login/page";
 import UploadJob from "@/components/UploadJob";
+import Head from "next/head";
 
 
 const client = new Client();
@@ -74,6 +75,9 @@ export default function Home() {
   return (
     
     <main className="h-screen max-h-screen overflow-hidden font-workSans">
+      <Head>
+        <title>Upload Job | TalentBolt</title>
+      </Head>
       {currentUser ? (
         <>
           {userData.type === "business" ? (

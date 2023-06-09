@@ -13,6 +13,7 @@ import {
   Role,
   Query,
 } from "appwrite";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 
@@ -75,6 +76,9 @@ export default function Home() {
 
   return (
     <main className="h-screen max-h-screen overflow-hidden font-workSans">
+      <Head>
+        <title>Chat | TalentBolt</title>
+      </Head>
       {currentUser ? (
         <>
           <NavBar userData={userData} />

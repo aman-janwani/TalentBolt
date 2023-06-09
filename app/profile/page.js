@@ -6,6 +6,7 @@ import ProfileMain from "@/components/ProfileMain";
 import { useRouter } from "next/navigation";
 import Loading from "@/components/Loading";
 import Login from "../login/page";
+import Head from "next/head";
 
 const client = new Client();
 
@@ -89,6 +90,9 @@ const Profile = () => {
 
   return (
     <div className="font-workSans">
+      <Head>
+        <title>Profile | TalentBolt</title>
+      </Head>
       {currentUser ? (
         <>
           {isAvailable ? (

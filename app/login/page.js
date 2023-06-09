@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Client, Account, Databases, ID, Permission, Role } from "appwrite";
 import { useRouter } from "next/navigation";
 import LoginMain from "@/components/LoginMain";
+import Head from "next/head";
 
 const client = new Client();
 
@@ -60,6 +61,9 @@ const Login = () => {
 
   return (
     <div className="h-screen max-h-screen overflow-hidden font-workSans">
+      <Head>
+        <title>Login | TalentBolt</title>
+      </Head>
       {user ? (
         <>
         {router.back()}

@@ -51,7 +51,8 @@ const UploadJob = ({ userData }) => {
       location &&
       description &&
       duration &&
-      expLevel
+      expLevel &&
+      remote
     ) {
       const res = await database
         .createDocument(
@@ -219,7 +220,7 @@ const UploadJob = ({ userData }) => {
             </div>
           </div>
           <div className="flex items-start justify-between gap-[30px]">
-            <div className="w-full flex items-center gap-[10px] px-[20px] py-[10px]">
+            <div className="w-full flex flex-col items-start gap-[10px] px-[20px] py-[10px]">
               <label htmlFor="remote" className="text-[#111111] font-semibold">
                 Remote
               </label>
