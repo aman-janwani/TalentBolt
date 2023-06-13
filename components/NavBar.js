@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const NavBar = ({ userData }) => {
+  
   return (
     <div className="bg-gradient-to-r from-[#FFEFFA] to-[#D296F3] flex items-center justify-between px-[60px] py-[15px]">
       <div>

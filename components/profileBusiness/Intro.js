@@ -116,6 +116,16 @@ const Intro = ({userData}) => {
   };
 
   
+  const handleLogout = async () => {
+    try {
+      await account.deleteSessions();
+      router.push("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  
   return (
     <div className="w-full relative bg-white rounded-[20px] flex flex-col items-center justify-between h-[350px]">
       <div className="absolute h-[118px] w-[118px] border-2 border-[#111111] bg-[#f2f2f2] rounded-full top-[20%] bottom-1/2 left-[40px] z-20 translate-y-1/2">

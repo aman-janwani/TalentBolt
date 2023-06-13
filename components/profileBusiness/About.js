@@ -65,6 +65,15 @@ const About = ({userData}) => {
       });
   };
 
+  const handleLogout = async () => {
+    try {
+      await account.deleteSessions();
+      router.push("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="w-full bg-white rounded-[20px] px-[40px] py-[20px] flex flex-col items-end gap-[20px]">
       <div className="flex flex-col gap-[15px] items-start w-full">
@@ -76,7 +85,6 @@ const About = ({userData}) => {
       <div>
         <button className="p-2 rounded-lg bg-[#111111] text-white">
           <svg
-          onClick={openModal}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

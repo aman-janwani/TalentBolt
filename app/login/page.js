@@ -34,14 +34,6 @@ const Login = () => {
   //   )
   // }
 
-  const handleLogout = async () => {
-    try {
-      await account.deleteSessions();
-      router.push("/");
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   const [user, setUser] = useState(null);
 

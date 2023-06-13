@@ -74,28 +74,6 @@ const LoginMain = () => {
               </span>
             </button>
           </div>
-          <div className="w-full flex items-center justify-center">
-            <p className="text-[14px] font-semibold text-[#111111]">or</p>
-          </div>
-          <div className="w-full">
-            <input disabled
-              type="text"
-              placeholder="Email"
-              className="rounded-[10px] cursor-not-allowed py-[14px] w-full px-[33px] bg-[#111111]/5 border-none outline-none focus:brightness-75"
-            />
-          </div>
-          <div className="w-full">
-            <input disabled
-              type="password"
-              placeholder="Password"
-              className="rounded-[10px] cursor-not-allowed py-[14px] w-full px-[33px] bg-[#111111]/5 border-none outline-none focus:brightness-75"
-            />
-          </div>
-          <div className="w-full">
-            <button disabled className="flex cursor-not-allowed justify-center items-center border-2 border-[#111111] bg-[#111111] text-white rounded-[10px] py-[14px] w-full">
-              Signup
-            </button>
-          </div>
         </div>
       </div>
     </div>
