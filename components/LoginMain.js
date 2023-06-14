@@ -18,7 +18,7 @@ const LoginMain = () => {
   const handleSignup = () => {
     account.createOAuth2Session(
       "google",
-      "http://localhost:3000/profile"
+      "https://talent-bolt.vercel.app/profile"
     );
     console.log("done");
   }

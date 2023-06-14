@@ -22,7 +22,7 @@ const Login = () => {
     account.createOAuth2Session(
       "google",
       "https://talent-bolt.vercel.app/profile"
-    );
+          );
     console.log("done");
   };
 
